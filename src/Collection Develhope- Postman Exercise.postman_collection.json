@@ -1,0 +1,744 @@
+{
+	"info": {
+		"_postman_id": "a043dfd8-1644-4045-b1ae-73259703bc0e",
+		"name": "Collection Develhope: Postman Exercise",
+		"description": "# This is a Training Collection\n\nI will use it as an exercise utilising Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26121086"
+	},
+	"item": [
+		{
+			"name": "FreeCocktailDB",
+			"item": [
+				{
+					"name": "Search a cocktail by name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita",
+							"protocol": "https",
+							"host": [
+								"www",
+								"thecocktaildb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "s",
+									"value": "margarita",
+									"description": "cocktail name"
+								}
+							]
+						},
+						"description": "This API searches a cocktail by name"
+					},
+					"response": [
+						{
+							"name": "Search a cocktail by name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita",
+									"protocol": "https",
+									"host": [
+										"www",
+										"thecocktaildb",
+										"com"
+									],
+									"path": [
+										"api",
+										"json",
+										"v1",
+										"1",
+										"search.php"
+									],
+									"query": [
+										{
+											"key": "s",
+											"value": "margarita",
+											"description": "cocktail name"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 11:25:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=LuzInEU0XJIS%2BszF3L8%2FVyXIgW9KRKrDSYbDnwQjYHWZbRSAQ25TaQ0GPKoYxw9LTkSvdgIA20gEJhqGVWyDMQ7iHib1JnTRFeMBOWx%2F3yNh%2Bg6Jt19fUYNtzYaw26hP2296MRF92HM%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "7a194838edb8bab7-MXP"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"drinks\": [\n        {\n            \"idDrink\": \"11007\",\n            \"strDrink\": \"Margarita\",\n            \"strDrinkAlternate\": null,\n            \"strTags\": \"IBA,ContemporaryClassic\",\n            \"strVideo\": null,\n            \"strCategory\": \"Ordinary Drink\",\n            \"strIBA\": \"Contemporary Classics\",\n            \"strAlcoholic\": \"Alcoholic\",\n            \"strGlass\": \"Cocktail glass\",\n            \"strInstructions\": \"Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.\",\n            \"strInstructionsES\": null,\n            \"strInstructionsDE\": \"Reiben Sie den Rand des Glases mit der Limettenscheibe, damit das Salz daran haftet. Achten Sie darauf, dass nur der äußere Rand angefeuchtet wird und streuen Sie das Salz darauf. Das Salz sollte sich auf den Lippen des Genießers befinden und niemals in den Cocktail einmischen. Die anderen Zutaten mit Eis schütteln und vorsichtig in das Glas geben.\",\n            \"strInstructionsFR\": null,\n            \"strInstructionsIT\": \"Strofina il bordo del bicchiere con la fetta di lime per far aderire il sale.\\r\\nAvere cura di inumidire solo il bordo esterno e cospargere di sale.\\r\\nIl sale dovrebbe presentarsi alle labbra del bevitore e non mescolarsi mai al cocktail.\\r\\nShakerare gli altri ingredienti con ghiaccio, quindi versarli delicatamente nel bicchiere.\",\n            \"strInstructionsZH-HANS\": null,\n            \"strInstructionsZH-HANT\": null,\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg\",\n            \"strIngredient1\": \"Tequila\",\n            \"strIngredient2\": \"Triple sec\",\n            \"strIngredient3\": \"Lime juice\",\n            \"strIngredient4\": \"Salt\",\n            \"strIngredient5\": null,\n            \"strIngredient6\": null,\n            \"strIngredient7\": null,\n            \"strIngredient8\": null,\n            \"strIngredient9\": null,\n            \"strIngredient10\": null,\n            \"strIngredient11\": null,\n            \"strIngredient12\": null,\n            \"strIngredient13\": null,\n            \"strIngredient14\": null,\n            \"strIngredient15\": null,\n            \"strMeasure1\": \"1 1/2 oz \",\n            \"strMeasure2\": \"1/2 oz \",\n            \"strMeasure3\": \"1 oz \",\n            \"strMeasure4\": null,\n            \"strMeasure5\": null,\n            \"strMeasure6\": null,\n            \"strMeasure7\": null,\n            \"strMeasure8\": null,\n            \"strMeasure9\": null,\n            \"strMeasure10\": null,\n            \"strMeasure11\": null,\n            \"strMeasure12\": null,\n            \"strMeasure13\": null,\n            \"strMeasure14\": null,\n            \"strMeasure15\": null,\n            \"strImageSource\": \"https://commons.wikimedia.org/wiki/File:Klassiche_Margarita.jpg\",\n            \"strImageAttribution\": \"Cocktailmarler\",\n            \"strCreativeCommonsConfirmed\": \"Yes\",\n            \"dateModified\": \"2015-08-18 14:42:59\"\n        },\n        {\n            \"idDrink\": \"11118\",\n            \"strDrink\": \"Blue Margarita\",\n            \"strDrinkAlternate\": null,\n            \"strTags\": null,\n            \"strVideo\": null,\n            \"strCategory\": \"Ordinary Drink\",\n            \"strIBA\": null,\n            \"strAlcoholic\": \"Alcoholic\",\n            \"strGlass\": \"Cocktail glass\",\n            \"strInstructions\": \"Rub rim of cocktail glass with lime juice. Dip rim in coarse salt. Shake tequila, blue curacao, and lime juice with ice, strain into the salt-rimmed glass, and serve.\",\n            \"strInstructionsES\": null,\n            \"strInstructionsDE\": \"Den Rand des Cocktailglases mit Limettensaft einreiben. Den Rand in grobes Salz tauchen. Tequila, blauen Curacao und Limettensaft mit Eis schütteln, in das mit Salz umhüllte Glas abseihen und servieren.\",\n            \"strInstructionsFR\": null,\n            \"strInstructionsIT\": \"Strofinare il bordo del bicchiere da cocktail con succo di lime. Immergere il bordo nel sale grosso. Shakerare tequila, blue curacao e succo di lime con ghiaccio, filtrare nel bicchiere bordato di sale e servire.\",\n            \"strInstructionsZH-HANS\": null,\n            \"strInstructionsZH-HANT\": null,\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/bry4qh1582751040.jpg\",\n            \"strIngredient1\": \"Tequila\",\n            \"strIngredient2\": \"Blue Curacao\",\n            \"strIngredient3\": \"Lime juice\",\n            \"strIngredient4\": \"Salt\",\n            \"strIngredient5\": null,\n            \"strIngredient6\": null,\n            \"strIngredient7\": null,\n            \"strIngredient8\": null,\n            \"strIngredient9\": null,\n            \"strIngredient10\": null,\n            \"strIngredient11\": null,\n            \"strIngredient12\": null,\n            \"strIngredient13\": null,\n            \"strIngredient14\": null,\n            \"strIngredient15\": null,\n            \"strMeasure1\": \"1 1/2 oz \",\n            \"strMeasure2\": \"1 oz \",\n            \"strMeasure3\": \"1 oz \",\n            \"strMeasure4\": \"Coarse \",\n            \"strMeasure5\": null,\n            \"strMeasure6\": null,\n            \"strMeasure7\": null,\n            \"strMeasure8\": null,\n            \"strMeasure9\": null,\n            \"strMeasure10\": null,\n            \"strMeasure11\": null,\n            \"strMeasure12\": null,\n            \"strMeasure13\": null,\n            \"strMeasure14\": null,\n            \"strMeasure15\": null,\n            \"strImageSource\": null,\n            \"strImageAttribution\": null,\n            \"strCreativeCommonsConfirmed\": \"Yes\",\n            \"dateModified\": \"2015-08-18 14:51:53\"\n        },\n        {\n            \"idDrink\": \"17216\",\n            \"strDrink\": \"Tommy's Margarita\",\n            \"strDrinkAlternate\": null,\n            \"strTags\": \"IBA,NewEra\",\n            \"strVideo\": null,\n            \"strCategory\": \"Ordinary Drink\",\n            \"strIBA\": \"New Era Drinks\",\n            \"strAlcoholic\": \"Alcoholic\",\n            \"strGlass\": \"Old-Fashioned glass\",\n            \"strInstructions\": \"Shake and strain into a chilled cocktail glass.\",\n            \"strInstructionsES\": null,\n            \"strInstructionsDE\": \"Schütteln und in ein gekühltes Cocktailglas abseihen.\",\n            \"strInstructionsFR\": null,\n            \"strInstructionsIT\": \"Shakerare e filtrare in una coppetta da cocktail ghiacciata.\",\n            \"strInstructionsZH-HANS\": null,\n            \"strInstructionsZH-HANT\": null,\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/loezxn1504373874.jpg\",\n            \"strIngredient1\": \"Tequila\",\n            \"strIngredient2\": \"Lime Juice\",\n            \"strIngredient3\": \"Agave syrup\",\n            \"strIngredient4\": null,\n            \"strIngredient5\": null,\n            \"strIngredient6\": null,\n            \"strIngredient7\": null,\n            \"strIngredient8\": null,\n            \"strIngredient9\": null,\n            \"strIngredient10\": null,\n            \"strIngredient11\": null,\n            \"strIngredient12\": null,\n            \"strIngredient13\": null,\n            \"strIngredient14\": null,\n            \"strIngredient15\": null,\n            \"strMeasure1\": \"4.5 cl\",\n            \"strMeasure2\": \"1.5 cl\",\n            \"strMeasure3\": \"2 spoons\",\n            \"strMeasure4\": null,\n            \"strMeasure5\": null,\n            \"strMeasure6\": null,\n            \"strMeasure7\": null,\n            \"strMeasure8\": null,\n            \"strMeasure9\": null,\n            \"strMeasure10\": null,\n            \"strMeasure11\": null,\n            \"strMeasure12\": null,\n            \"strMeasure13\": null,\n            \"strMeasure14\": null,\n            \"strMeasure15\": null,\n            \"strImageSource\": null,\n            \"strImageAttribution\": null,\n            \"strCreativeCommonsConfirmed\": \"No\",\n            \"dateModified\": \"2017-09-02 18:37:54\"\n        },\n        {\n            \"idDrink\": \"16158\",\n            \"strDrink\": \"Whitecap Margarita\",\n            \"strDrinkAlternate\": null,\n            \"strTags\": null,\n            \"strVideo\": null,\n            \"strCategory\": \"Other / Unknown\",\n            \"strIBA\": null,\n            \"strAlcoholic\": \"Alcoholic\",\n            \"strGlass\": \"Margarita/Coupette glass\",\n            \"strInstructions\": \"Place all ingredients in a blender and blend until smooth. This makes one drink.\",\n            \"strInstructionsES\": null,\n            \"strInstructionsDE\": \"Alle Zutaten in einen Mixer geben und mischen.\",\n            \"strInstructionsFR\": null,\n            \"strInstructionsIT\": \"Metti tutti gli ingredienti in un frullatore e frulla fino a che non diventa liscio.\",\n            \"strInstructionsZH-HANS\": null,\n            \"strInstructionsZH-HANT\": null,\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/srpxxp1441209622.jpg\",\n            \"strIngredient1\": \"Ice\",\n            \"strIngredient2\": \"Tequila\",\n            \"strIngredient3\": \"Cream of coconut\",\n            \"strIngredient4\": \"Lime juice\",\n            \"strIngredient5\": null,\n            \"strIngredient6\": null,\n            \"strIngredient7\": null,\n            \"strIngredient8\": null,\n            \"strIngredient9\": null,\n            \"strIngredient10\": null,\n            \"strIngredient11\": null,\n            \"strIngredient12\": null,\n            \"strIngredient13\": null,\n            \"strIngredient14\": null,\n            \"strIngredient15\": null,\n            \"strMeasure1\": \"1 cup \",\n            \"strMeasure2\": \"2 oz \",\n            \"strMeasure3\": \"1/4 cup \",\n            \"strMeasure4\": \"3 tblsp fresh \",\n            \"strMeasure5\": null,\n            \"strMeasure6\": null,\n            \"strMeasure7\": null,\n            \"strMeasure8\": null,\n            \"strMeasure9\": null,\n            \"strMeasure10\": null,\n            \"strMeasure11\": null,\n            \"strMeasure12\": null,\n            \"strMeasure13\": null,\n            \"strMeasure14\": null,\n            \"strMeasure15\": null,\n            \"strImageSource\": null,\n            \"strImageAttribution\": null,\n            \"strCreativeCommonsConfirmed\": \"No\",\n            \"dateModified\": \"2015-09-02 17:00:22\"\n        },\n        {\n            \"idDrink\": \"12322\",\n            \"strDrink\": \"Strawberry Margarita\",\n            \"strDrinkAlternate\": null,\n            \"strTags\": null,\n            \"strVideo\": null,\n            \"strCategory\": \"Ordinary Drink\",\n            \"strIBA\": null,\n            \"strAlcoholic\": \"Alcoholic\",\n            \"strGlass\": \"Cocktail glass\",\n            \"strInstructions\": \"Rub rim of cocktail glass with lemon juice and dip rim in salt. Shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve.\",\n            \"strInstructionsES\": null,\n            \"strInstructionsDE\": \"Cocktailglasrand mit Zitronensaft und Tauchrand in Salz wenden. Schnaps, Tequila, Triple-Sec, Zitronensaft und Erdbeeren mit Eis schütteln, in das salzige Glas sieben und servieren.\",\n            \"strInstructionsFR\": null,\n            \"strInstructionsIT\": \"Strofinare il bordo del bicchiere da cocktail con succo di limone e immergerlo nel sale. Shakerare grappa, tequila, triple sec, succo di limone e fragole con ghiaccio, filtrare nel bicchiere bordato di sale e servire.\",\n            \"strInstructionsZH-HANS\": null,\n            \"strInstructionsZH-HANT\": null,\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/tqyrpw1439905311.jpg\",\n            \"strIngredient1\": \"Strawberry schnapps\",\n            \"strIngredient2\": \"Tequila\",\n            \"strIngredient3\": \"Triple sec\",\n            \"strIngredient4\": \"Lemon juice\",\n            \"strIngredient5\": \"Strawberries\",\n            \"strIngredient6\": \"Salt\",\n            \"strIngredient7\": null,\n            \"strIngredient8\": null,\n            \"strIngredient9\": null,\n            \"strIngredient10\": null,\n            \"strIngredient11\": null,\n            \"strIngredient12\": null,\n            \"strIngredient13\": null,\n            \"strIngredient14\": null,\n            \"strIngredient15\": null,\n            \"strMeasure1\": \"1/2 oz \",\n            \"strMeasure2\": \"1 oz \",\n            \"strMeasure3\": \"1/2 oz \",\n            \"strMeasure4\": \"1 oz \",\n            \"strMeasure5\": \"1 oz \",\n            \"strMeasure6\": null,\n            \"strMeasure7\": null,\n            \"strMeasure8\": null,\n            \"strMeasure9\": null,\n            \"strMeasure10\": null,\n            \"strMeasure11\": null,\n            \"strMeasure12\": null,\n            \"strMeasure13\": null,\n            \"strMeasure14\": null,\n            \"strMeasure15\": null,\n            \"strImageSource\": null,\n            \"strImageAttribution\": null,\n            \"strCreativeCommonsConfirmed\": \"No\",\n            \"dateModified\": \"2015-08-18 14:41:51\"\n        },\n        {\n            \"idDrink\": \"178332\",\n            \"strDrink\": \"Smashed Watermelon Margarita\",\n            \"strDrinkAlternate\": null,\n            \"strTags\": null,\n            \"strVideo\": null,\n            \"strCategory\": \"Cocktail\",\n            \"strIBA\": null,\n            \"strAlcoholic\": \"Alcoholic\",\n            \"strGlass\": \"Collins glass\",\n            \"strInstructions\": \"In a mason jar muddle the watermelon and 5 mint leaves together into a puree and strain. Next add the grapefruit juice, juice of half a lime and the tequila as well as some ice. Put a lid on the jar and shake. Pour into a glass and add more ice. Garnish with fresh mint and a small slice of watermelon.\",\n            \"strInstructionsES\": null,\n            \"strInstructionsDE\": null,\n            \"strInstructionsFR\": null,\n            \"strInstructionsIT\": \"In un barattolo di vetro pestare l'anguria e 5 foglie di menta insieme, filtrare il contenuto in un bicchiere. Quindi aggiungere il succo di pompelmo, il succo di mezzo lime, la tequila e un po 'di ghiaccio. Metti un coperchio sul barattolo e agita. Versare in un bicchiere e aggiungere altro ghiaccio. Guarnire con menta fresca e una fettina di anguria.\",\n            \"strInstructionsZH-HANS\": null,\n            \"strInstructionsZH-HANT\": null,\n            \"strDrinkThumb\": \"https://www.thecocktaildb.com/images/media/drink/dztcv51598717861.jpg\",\n            \"strIngredient1\": \"Watermelon\",\n            \"strIngredient2\": \"Mint\",\n            \"strIngredient3\": \"Grapefruit Juice\",\n            \"strIngredient4\": \"Lime\",\n            \"strIngredient5\": \"Tequila\",\n            \"strIngredient6\": \"Watermelon\",\n            \"strIngredient7\": \"Mint\",\n            \"strIngredient8\": null,\n            \"strIngredient9\": null,\n            \"strIngredient10\": null,\n            \"strIngredient11\": null,\n            \"strIngredient12\": null,\n            \"strIngredient13\": null,\n            \"strIngredient14\": null,\n            \"strIngredient15\": null,\n            \"strMeasure1\": \"1/2 cup\",\n            \"strMeasure2\": \"5\",\n            \"strMeasure3\": \"1/3 Cup\",\n            \"strMeasure4\": \"Juice of 1/2\",\n            \"strMeasure5\": \"1 shot\",\n            \"strMeasure6\": \"Garnish with\",\n            \"strMeasure7\": \"Garnish with\",\n            \"strMeasure8\": null,\n            \"strMeasure9\": null,\n            \"strMeasure10\": null,\n            \"strMeasure11\": null,\n            \"strMeasure12\": null,\n            \"strMeasure13\": null,\n            \"strMeasure14\": null,\n            \"strMeasure15\": null,\n            \"strImageSource\": null,\n            \"strImageAttribution\": null,\n            \"strCreativeCommonsConfirmed\": \"No\",\n            \"dateModified\": null\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Search ingredients by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.thecocktaildb.com/api/json/v1/1/search.php?i=rum",
+							"protocol": "https",
+							"host": [
+								"www",
+								"thecocktaildb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "rum",
+									"description": "cocktail ingredient"
+								}
+							]
+						},
+						"description": "This API searches ingredients by name"
+					},
+					"response": [
+						{
+							"name": "Search ingredients by name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://www.thecocktaildb.com/api/json/v1/1/search.php?i=rum",
+									"protocol": "https",
+									"host": [
+										"www",
+										"thecocktaildb",
+										"com"
+									],
+									"path": [
+										"api",
+										"json",
+										"v1",
+										"1",
+										"search.php"
+									],
+									"query": [
+										{
+											"key": "i",
+											"value": "rum",
+											"description": "cocktail ingredient"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 11:23:49 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=QRxr321hmzluFgnMIO2wql3tIJFMXFNpUl5vjxLSaiQMzaxXopdL3hDQIn9OIZr%2F75x0O%2FsIbxJf5qEK1HkLpqMyOxBUZITCSzs1P0%2BIc7sSDhEo6DXK%2FBg1dGm%2BcTqiuuTre0dzdhY%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "7a19450f3818bab7-MXP"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ingredients\": [\n        {\n            \"idIngredient\": \"3\",\n            \"strIngredient\": \"Rum\",\n            \"strDescription\": \"Rum is a distilled alcoholic beverage made from sugarcane byproducts, such as molasses, or directly from sugarcane juice, by a process of fermentation and distillation. The distillate, a clear liquid, is then usually aged in oak barrels.\\r\\n\\r\\nThe majority of the world's rum production occurs in the Caribbean and Latin America. Rum is also produced in Scotland, Austria, Spain, Australia, New Zealand, Fiji, the Philippines, India, Reunion Island, Mauritius, South Africa, Taiwan, Thailand, Japan, the United States, and Canada.\\r\\n\\r\\nRums are produced in various grades. Light rums are commonly used in cocktails, whereas \\\"golden\\\" and \\\"dark\\\" rums were typically consumed straight or neat, on the rocks, or used for cooking, but are now commonly consumed with mixers. Premium rums are also available, made to be consumed either straight or iced.\\r\\n\\r\\nRum plays a part in the culture of most islands of the West Indies as well as in The Maritimes and Newfoundland. This beverage has famous associations with the Royal Navy (where it was mixed with water or beer to make grog) and piracy (where it was consumed as bumbo). Rum has also served as a popular medium of economic exchange, used to help fund enterprises such as slavery (see Triangular trade), organized crime, and military insurgencies (e.g., the American Revolution and Australia's Rum Rebellion).\\r\\n\\r\\nThe precursors to rum date back to antiquity. Development of fermented drinks produced from sugarcane juice is believed to have first occurred either in ancient India or in China, and to have spread from there. An example of such an early drink is brum. Produced by the Malay people, brum dates back thousands of years. Marco Polo also recorded a 14th-century account of a \\\"very good wine of sugar\\\" that was offered to him in the area that became modern-day Iran.\\r\\n\\r\\nThe first distillation of rum took place on the sugarcane plantations of the Caribbean in the 17th century. Plantation slaves first discovered molasses, a byproduct of the sugar refining process, could be fermented into alcohol. Later, distillation of these alcoholic byproducts concentrated the alcohol and removed impurities, producing the first true rums. Tradition suggests rum first originated on the island of Barbados. However, in the decade of the 1620s, rum production was recorded in Brazil. A liquid identified as rum has been found in a tin bottle found on the Swedish warship Vasa, which sank in 1628.\\r\\n\\r\\nA 1651 document from Barbados stated, \\\"The chief fuddling they make in the island is Rumbullion, alias Kill-Divil, and thi is made of sugar canes distilled, a hot, hellish, and terrible liquor.\\\"\",\n            \"strType\": \"Rum\",\n            \"strAlcohol\": \"Yes\",\n            \"strABV\": \"40\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dummy REST API Example",
+			"item": [
+				{
+					"name": "Get info about the employee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummy.restapiexample.com/api/v1/employee/14",
+							"protocol": "https",
+							"host": [
+								"dummy",
+								"restapiexample",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"14"
+							]
+						},
+						"description": "This API gets info about the employee"
+					},
+					"response": [
+						{
+							"name": "Get info about the employee",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dummy.restapiexample.com/api/v1/employee/14",
+									"protocol": "https",
+									"host": [
+										"dummy",
+										"restapiexample",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"employee",
+										"14"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 10:19:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "nginx/1.21.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "154"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=21600"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 02 Mar 2023 16:19:55 GMT"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "host-header",
+									"value": "c2hhcmVkLmJsdWVob3N0LmNvbQ=="
+								},
+								{
+									"key": "X-Endurance-Cache-Level",
+									"value": "2"
+								},
+								{
+									"key": "X-nginx-cache",
+									"value": "WordPress"
+								},
+								{
+									"key": "X-Server-Cache",
+									"value": "true"
+								},
+								{
+									"key": "X-Proxy-Cache",
+									"value": "MISS"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"id\": 14,\n        \"employee_name\": \"Haley Kennedy\",\n        \"employee_salary\": 313500,\n        \"employee_age\": 43,\n        \"profile_image\": \"\"\n    },\n    \"message\": \"Successfully! Record has been fetched.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Creating a new record sending a JSON",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummy.restapiexample.com/api/v1/create?name=John&salary=40000&age=35",
+							"protocol": "https",
+							"host": [
+								"dummy",
+								"restapiexample",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"create"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "John",
+									"description": "name"
+								},
+								{
+									"key": "salary",
+									"value": "40000",
+									"description": "salary"
+								},
+								{
+									"key": "age",
+									"value": "35",
+									"description": "age"
+								}
+							]
+						},
+						"description": "This API creates a new record sending a JSON"
+					},
+					"response": [
+						{
+							"name": "Creating a new record sending a JSON",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dummy.restapiexample.com/api/v1/create?name=John&salary=40000&age=35",
+									"protocol": "https",
+									"host": [
+										"dummy",
+										"restapiexample",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"create"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "John"
+										},
+										{
+											"key": "salary",
+											"value": "40000"
+										},
+										{
+											"key": "age",
+											"value": "35"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 10:25:18 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=21600"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Upgrade",
+									"value": "h2,h2c"
+								},
+								{
+									"key": "Connection",
+									"value": "Upgrade"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 02 Mar 2023 16:25:18 GMT"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "host-header",
+									"value": "c2hhcmVkLmJsdWVob3N0LmNvbQ=="
+								},
+								{
+									"key": "X-Endurance-Cache-Level",
+									"value": "2"
+								},
+								{
+									"key": "X-nginx-cache",
+									"value": "WordPress"
+								},
+								{
+									"key": "Content-Length",
+									"value": "127"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"name\": \"John\",\n        \"salary\": \"40000\",\n        \"age\": \"35\",\n        \"id\": 3842\n    },\n    \"message\": \"Successfully! Record has been added.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Agify.io",
+			"item": [
+				{
+					"name": "Send an array of names to predict the age for multiple names",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.agify.io?name[]=lucy&name[]=bob&name[]=alice",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agify",
+								"io"
+							],
+							"query": [
+								{
+									"key": "name[]",
+									"value": "lucy",
+									"description": "name 1"
+								},
+								{
+									"key": "name[]",
+									"value": "bob",
+									"description": "name 2"
+								},
+								{
+									"key": "name[]",
+									"value": "alice",
+									"description": "name 3"
+								}
+							]
+						},
+						"description": "This API sends an _array of names_ to predict the age for multiple names"
+					},
+					"response": [
+						{
+							"name": "Send an array of names to predict the age for multiple names",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.agify.io?name[]=lucy&name[]=bob&name[]=alice",
+									"protocol": "https",
+									"host": [
+										"api",
+										"agify",
+										"io"
+									],
+									"query": [
+										{
+											"key": "name[]",
+											"value": "lucy",
+											"description": "name 1"
+										},
+										{
+											"key": "name[]",
+											"value": "bob",
+											"description": "name 2"
+										},
+										{
+											"key": "name[]",
+											"value": "alice",
+											"description": "name 3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.16.1"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 11:01:57 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "118"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "x-rate-limit-limit,x-rate-limit-remaining,x-rate-limit-reset"
+								},
+								{
+									"key": "cache-control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "x-rate-limit-limit",
+									"value": "1000"
+								},
+								{
+									"key": "x-rate-limit-remaining",
+									"value": "993"
+								},
+								{
+									"key": "x-rate-limit-reset",
+									"value": "46683"
+								},
+								{
+									"key": "x-request-id",
+									"value": "F0iVNWdoWVI000MVpGjC"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"age\": 56,\n        \"count\": 25515,\n        \"name\": \"lucy\"\n    },\n    {\n        \"age\": 69,\n        \"count\": 43997,\n        \"name\": \"bob\"\n    },\n    {\n        \"age\": 55,\n        \"count\": 69230,\n        \"name\": \"alice\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
